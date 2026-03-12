@@ -1,11 +1,11 @@
 def containsCommonItemBrute(arr1, arr2):
   for item in arr1: #O(n)
-    if item in arr2: #O(n)
+    if item in arr2: #O(m)
       return True
   return False
 
 def containsCommonItem(arr1, arr2):
-  set2 = set(arr2)
+  set2 = set(arr2) #O(m)
   # or use dict: dict2 = {item:True for item in arr2}
   # or dict2 = dict.fromkeys(arr2)
   for item in arr1: #O(n)
